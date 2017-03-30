@@ -6,7 +6,7 @@
 * [Choosing an API](choosing-an-api.md)
 * [GET and POST](get-and-post.md)
 * [Reading API documentation](reading-api-documentation.md)
-* Make a GitHub account
+* [Make a GitHub account](make-a-github-account.md)
 * [Copy the project template](copy-the-project-template.md)
 * What is Sinatra?
 * Your first GET
