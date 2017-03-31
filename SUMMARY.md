@@ -9,8 +9,8 @@
 * [Make a GitHub account](make-a-github-account.md)
 * [Copy the project template](copy-the-project-template.md)
 * What is Sinatra?
-* Your first GET
-* [Make a Twitter account](make-a-github-account.md)
+* [Your first GET](your-first-get.md)
+* [Make a Twitter account](make-a-twitter-account.md)
 * [What is OAuth?](what-is-oauth.md)
 * Setting environment variables
 * [Your first POST](your-first-post.md)
