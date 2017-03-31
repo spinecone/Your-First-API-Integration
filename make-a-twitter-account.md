@@ -18,5 +18,9 @@ Note: The information you enter here won't be used by the app, but make sure the
 
 Leave this page open, we'll come back to it in the chapter on environment variables.
 
+# What did we just do?
 
+Twitter needs to give your app permission to post tweets via its API. Like many services, Twitter uses OAuth to grant that permission. Instead of just authenticating with your username and password, which could compromise your account if stolen, OAuth allows you to generate tokens that you can turn off or set to "read only."
+
+OAuth can be a little complicated to set up, but most of that process is taken care of us by the oauth gem. You can read more about OAuth [here](http://oauth.net/).
 
