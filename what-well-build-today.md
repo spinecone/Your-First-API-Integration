@@ -3,7 +3,7 @@
 For this workshop, we'll be taking a Sinatra app that posts a simple emoji "horoscope" and adding integrations with the Wikipedia and Twitter APIs to make it more interesting.
 
 ![](/assets/Screen Shot 2017-03-30 at 9.33.03 PM.png)  
-_\(The template we're starting with\)  
+_\(The template we're starting with\)    
 _  
 To do this, we will:
 
@@ -17,5 +17,5 @@ At the end, the app will look something like this:
 
 ![](/assets/Screen Shot 2017-03-30 at 9.47.52 PM.png)
 
-If that doesn't sound very exciting, that's ok. There's lots of other ways you can use the Wikipedia and Twitter APIs to create something fun.
+If that doesn't sound very exciting, that's ok. There's lots of other ways you can use the Wikipedia and Twitter APIs to create something fun. This tutorial is just a starting point for you to get familiar with the process of learning a new API.
 
