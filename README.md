@@ -5,7 +5,11 @@ This is a workshop for Ruby developers who are interested in making small, creat
 Our tools will be:
 
 * Version control on [GitHub](https://github.com/).
-* * [Twitter](https://twitter.com/), an online social network where our horoscope messages will be posted.
+* [Sinatra](http://docs.railsbridge.org/learn-to-code/sinatra), a framework for building web applications with Ruby, with less bulk than Ruby on Rails.
+* [HTTParty](https://github.com/jnunemaker/httparty), a Ruby library for making web requests.
+* [Wikipedia](https://www.wikipedia.org/), an online encyclopedia where we'll be getting data for our horoscope messages.
+* [Twitter](https://twitter.com/), an online social network where our horoscope messages will be posted.
+* [OAuth](https://oauth.net/), a strategy for authenticating with web services.
 
 
 
