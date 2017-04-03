@@ -8,7 +8,7 @@
 * [Reading API documentation](reading-api-documentation.md)
 * [Make a GitHub account](make-a-github-account.md)
 * [Copy the project template](copy-the-project-template.md)
-* What is Sinatra?
+* [What is Sinatra?](what-is-sinatra.md)
 * [Your first GET](your-first-get.md)
 * [Make a Twitter account](make-a-twitter-account.md)
 * [What is OAuth?](what-is-oauth.md)
