@@ -1,4 +1,5 @@
 # Make a Twitter account
+Now we can move on to tweeting your horoscope message. We'll first set up your Twitter account, and then discuss authentication and making POST requests with HTTParty.
 
 ![](/assets/Screen Shot 2017-03-30 at 9.15.32 PM.png)
 
