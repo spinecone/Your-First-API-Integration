@@ -1,6 +1,6 @@
 # GET and POST
 
-To interact with the Wikipedia and Twitter APIs, we're going to be using HTTP requests, which are really just a combination of a **url** plus a **method** and sometimes **parameters**. Whenever you use a website, whether clicking in a browser or through an API, you are making HTTP requests.
+To interact with the Wikipedia and Twitter APIs, we're going to be using HTTP requests, which are a combination of a **url** plus a **method** and sometimes **parameters**. Whenever you use a website, whether clicking in a browser or through an API, you are making HTTP requests.
 
 Here's an example of an HTTP request, where the **url** is "[https://twitter.com/search](https://twitter.com/search)" \(Twitter's search page\), the **method **is GET, and the one **parameter **in the request is "q=pancakes."
 
@@ -8,7 +8,7 @@ Here's an example of an HTTP request, where the **url** is "[https://twitter.com
 https://twitter.com/search?q=pancakes
 ```
 
-Although the url and parameters are easy to see in this example, the method is a little more abstract.
+Although the url and parameters are visible in this example, the method is a little more abstract.
 
 GET and POST are types of HTTP methods. There are several different types of HTTP requests that have different purposes. They are:
 
