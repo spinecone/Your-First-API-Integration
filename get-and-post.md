@@ -16,5 +16,7 @@ GET and POST are types of HTTP methods. There are several different types of HTT
 * **POST **requests push data from a person or robot to a website. If you go to Twitter to tweet about how much you love pancakes, you're making a POST request. Unlike a GET request, you won't be able to see POST parameters from the url bar of your browser. 
 * There are a few other HTTP request methods such as DELETE and PATCH, but we won't be covering them in this tutorial.
 
+Don't worry if these seem confusing or not intuitive. Any decent API documentation, like the ones provided by Wikipedia and Twitter, will tell you the exact url, method, and parameters needed to make requests. We'll go over how to read API documentation in the next section.
+
 
 
