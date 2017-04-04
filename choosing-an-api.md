@@ -8,4 +8,6 @@ The APIs used in this tutorial were chosen because they are:
 don't even have  documentation! 😱)
 * The Wikipedia API **does not require authentication**, which means one less step to using it. We will need to use authentication for the Twitter API since we will be posting to your personal, password-protected Twitter account.
 
-When deciding which API to work with on your own projects, ideally all of them would meet each of these expectations. 
+When deciding which APIs to work with on your own projects, ideally all of them would meet each of these expectations. This is not always possible, unfortunately, but I encourage you to look for alternatives if you see a web API that does not meet at least one of these points.
+
+**Example**: Let's say that you want to find an API to make an app to teach yourself another language. Google Translate's API charges a fee based on how much you use it, which isn't ideal. However, there aren't any signup steps beyond making an account and paying them, it's very well documented, and considered one of the best APIs for translation. You could probably find a cheaper or free translation API, but this is your best option.
