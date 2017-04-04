@@ -14,3 +14,6 @@ For the rest of this tutorial, you'll need to use a **terminal** to copy the pro
 
 When you "fork" a GitHub repository, you're taking a project someone else has written \(in this case, the api-horoscope template\), and creating a copy of it that you can make changes to. The changes you make on your fork won't affect the original repository. You can read more about forking [here](https://guides.github.com/activities/forking/).
 
+"Cloning" a GitHub repo means taking some code that exists on GitHub and putting it somewhere that you can use and edit it. Here, we took your forked copy of the api-horoscope template and put it on your computer.
+
+One thing you might be wondering is why we didn't just make a clone of the original api-horoscope template. The reason is that only people who have been granted permission to a repository can push changes to it. By making a fork of api-horoscope, you can push whatever changes you want to your fork without needing access to the original.
