@@ -12,9 +12,9 @@ Most modern web applications use data from or push data to other websites. If yo
 
 APIs can be used to make creative software, as well. There are a wealth of [bots](https://botwiki.org/bots/) and apps based on output from APIs, many with no practical or financial purpose other than personal enjoyment. Some of my favorites are:
 
-* [**Picnic**](https://github.com/chromakode/picnic), an app that orders random delivery food to a random location and an Uber to take you there.
+* [**Picnic**](https://github.com/chromakode/picnic), an app that orders random delivery food to a random location and an Uber to take you there
   ![](/assets/Screen Shot 2017-04-03 at 8.53.18 PM.png)
-* [TMI Machine](https://twitter.com/tmimachine), a Twitter bot that tweets when and for how long someone uses a toilet.
+* [TMI Machine](https://github.com/emkosz/TMImachine), a Twitter bot that tweets when and for how long someone uses a toilet![](/assets/Screen Shot 2017-04-03 at 8.58.18 PM.png)
 
 
 
