@@ -9,16 +9,18 @@ For the new method in horoscope.rb, you'll need to use the oauth gem to generate
 If you visit[ the GitHub page for the oauth gem](https://github.com/oauth-xx/oauth-ruby), you'll see an examples of how to use it in the "Demonstration of Usage" section. There's a lot of information here, but again, OAuth is a complicated thing that you don't need to worry about understanding fully! You can ignore the parts about sessions, setting a callback url, and redirecting since that assumes your app has users that can log in and out. Without those parts, we're left with:
 
 ```
-consumer = OAuth::Consumer.new("key","secret", :site => "https://agree2")
+consumer = OAuth::Consumer.new("key","secret", site: "https://agree2")
 hash = { oauth_token: "token", oauth_token_secret: "token_secret" }
 request_token  = OAuth::RequestToken.from_hash(consumer, hash)
 access_token = request_token.get_access_token
-photos = access_token.get("/photos.xml")
+photos = access_token.post("/photos.xml", parameter_key: parameter_value)
 ```
 
-You can use all of that code as-is. You'll just need to replace "key", "secret", "[https://agree2](https://agree2)", token, token\_secret, and "/photos.xml" with the correct values for the horoscope app.
+You can use all of that code as-is. You'll just need to replace "key", "secret", "[https://agree2](https://dev.twitter.com/rest/reference/post/statuses/update)", token, token\_secret_, _"/photos.xml", parameter\_key, and parameter\_value with the correct values for the horoscope app.
 
 ## Using the Twitter API
 
-To find the correct urls to pass in to OAuth, we'll need to consult [the Twitter API documentation](https://dev.twitter.com/rest/public). Like the Wikipedia API documentation, the home page has a lot more information than we need to read right now.
+To find the correct urls to pass in to OAuth, we'll need to consult [the Twitter API documentation](https://dev.twitter.com/rest/public). Like the Wikipedia API documentation, the home page has a lot more information than we need to read right now. If you click on "Reference Documentation," you'll see a list of all the different requests we can make on the Twitter API. The one we want to read about right now is "POST statuses/update." If getting to that page seemed like a confusing process, you could also google "twitter api post tweet" and get to that page much faster \(it's an unfortunate reality that sometimes Google is the easiest way to get what you want out of API documentation\).
+
+There are 2 pieces of information we need from this page: the **resource url **and the **required parameters. **We will take the part of the resource url up to ".com" \(this is called the "hostname" of the url\) and use that as the "site" parameter of OAuth::Consumer.new. We'll take the rest of the resource url \(this is called the "path"\)  and use that to call `access_token.post`.
 
