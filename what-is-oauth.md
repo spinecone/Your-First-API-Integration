@@ -12,7 +12,7 @@ You might be wondering why we couldn't just authenticate with your username and 
 
 Your Access Token and Access Token Secret is like an invitation to a party at your house. If you give it to someone, they can visit and request access to your house. If someone you don't want to come to your party gets ahold of an invitation somehow, you can regenerate or destroy their tokens. We won't be doing this today, but you can make a unique Access Token and Secret for anyone who wants to use your app.
 
-Your Consumer Key and Consumer Secret is like a key to your house. If you lose it or someone steals it, you can just replace the lock and get a new key \(by regenerating the Consumer Key and Secret\). 
+Your Consumer Key and Consumer Secret are like a key to your house. If you lose it or someone steals it, you can just replace the lock and get a new key \(by regenerating the Consumer Key and Secret\).
 
 In section about making POST requests, we'll use your own "GARP," "PLORP," "FLUMP," and "SKUMP" to request access to Twitter. First we'll need to add those keys to a secret file that only your app can see.
 
