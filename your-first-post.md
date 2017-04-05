@@ -14,7 +14,7 @@ access_token = request_token.get_access_token
 photos = access_token.get("/photos.xml")
 ```
 
-You can use all of that code as-is. You'll just need to replace "key", "secret", "https://agree2", token, token\_secret, and "/photos.xml" with the correct values for the horoscope app.
+You can use all of that code as-is. You'll just need to replace "key", "secret", "[https://agree2](https://agree2)", token, token\_secret, and "/photos.xml" with the correct values for the horoscope app.
 
-To find the correct urls to pass in to oauth, we'll need to consult
+To find the correct urls to pass in to OAuth, we'll need to consult [the Twitter API documentation](https://dev.twitter.com/rest/public).
 
