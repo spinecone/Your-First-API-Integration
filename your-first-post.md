@@ -39,10 +39,9 @@ The last thing we'll need to do is add a button to index.erb that will post your
 </form>
 ```
 
-This sets up a form that sends data from all of the inputs inside of it to the url at "some url" when the submit button is clicked. You'll need to change the action to the name of the POST method you added to horoscope.rb, and pass in @prediction as the value to your input. You can add `type="hidden"` to the input so that it doesn't show up as a 
-form field on your page.
+This sets up a form that sends data from all of the inputs inside of it to the url at "some url" when the submit button is clicked. You'll need to change the action to the name of the POST method you added to horoscope.rb, and pass in @prediction as the value to your input. You can add `type="hidden"` to the input so that it doesn't show up as a form field on your page.
 
-🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨🤖✨
+🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨🤖✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 
 
 That's it! You now have the power to use any API to make any weird thing you want. May all of your GET and POST dreams come true.
 
