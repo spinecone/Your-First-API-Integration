@@ -1,4 +1,6 @@
 # Your first GET
+![](/assets/get.png)
+
 Now that we know how to request a random article from Wikipedia, we can add that behavior to the horoscope app. We'll be using HTTParty, a Ruby library for making HTTP requests.
 
 You can check out the full documentation for HTTParty at [https://github.com/jnunemaker/httparty](https://github.com/jnunemaker/httparty), but for now all you need to know is that to make a GET request, you use `HTTParty.get(url)`. Remember that the url for this request is just the Wikipedia API base url, with the "action" and "list" parameters at the end.
