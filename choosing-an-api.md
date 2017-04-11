@@ -1,5 +1,6 @@
 # Choosing an API
 ![](/assets/apis.png)
+
 The APIs used in this tutorial were chosen because they are:
 
 * **Free** (some APIs charge a subscription or one-time fee, or start to charge fees once you use them a certain amount\)
