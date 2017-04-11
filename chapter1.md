@@ -1,3 +1,4 @@
+![](/assets/breakfast.png)
 # What is an API?
 
 In the world of web applications, an API is a set of urls that you can use to access or create data on a website. More generally, an API can be any set of instructions for any kind of software, but today we're just concerned with the use of APIs for **getting stuff from and** **making stuff** **on websites**.
