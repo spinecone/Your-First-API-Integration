@@ -1,4 +1,5 @@
 # Your first POST
+![](/assets/post.png)
 
 We can now move on to posting messages on Twitter from your app! This will require 2 changes, **a new method in horoscope.rb** and **a new button in index.erb.**
 
