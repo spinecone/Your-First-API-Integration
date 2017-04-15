@@ -1,6 +1,8 @@
 # Make a GitHub account
 
 ![](/assets/Screen Shot 2017-03-29 at 11.59.06 PM.png)
+If you don't have a GitHub account, you'll need to create one first at [https://github.com/join](https://github.com/join) (the free version will be fine\). Then go to https://github.com/spinecone/api-horoscope.
+
 The template we're going to base a new project on, API Horoscope, is made up of 8 files \(one of them is not included on GitHub. I'll explain why further down\).
 
 * **README.md** is a file that most GitHub repos have. It describes what the project does and how to use it.
@@ -11,8 +13,6 @@ The template we're going to base a new project on, API Horoscope, is made up of 
 * **index.erb** (in the **views** directory) defines the visual contents of project. Right now this is just a box with a horoscope message and a "Try Again" link that refreshes the page.
 * **layout.erb** (also in the **views** directory) defines the overall layout of the page. You won't need to change this at all.
 * Finally, **.env** will hold our authentication secrets which we'll cover in the section about environment variables. **.env** is not included in the template repo since we don't want to make our authentication info publicly accessible.
-
-If you don't have a GitHub account, you'll need to create one first at [https://github.com/join](https://github.com/join) (the free version will be fine\).
 
 ## What did we just do? {#what-did-we-just-do}
 
