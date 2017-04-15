@@ -13,14 +13,10 @@ If you visit[ the GitHub page for the oauth gem](https://github.com/oauth-xx/oau
 
 ```
 consumer = OAuth::Consumer.new(
-  api_key,
-  api_secret,
+  api_key, api_secret,
   { site: 'https://www.blablabla.gov', scheme: 'header' }
 )
-token_hash = {
-  oauth_token: access_token,
-  oauth_token_secret: access_token_secret
-}
+token_hash = { oauth_token: access_token, oauth_token_secret: access_token_secret }
 access_token = OAuth::AccessToken.from_hash(consumer, token_hash )
 access_token.request(:post, 'https://www.blablabla.gov/api/do_something', parameter_name: parameter_value)
 ```
