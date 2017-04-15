@@ -3,7 +3,7 @@ For the rest of this tutorial, you'll need to use a **terminal** to copy the pro
 
 ![](/assets/Screen Shot 2017-03-29 at 11.48.54 PM.png)
 
-* Fork the "API Horoscope" template at [https://github.com/spinecone/api-horoscope](https://github.com/spinecone/api-horoscope) (by forking this template, you'll be able to keep changes you make to separate from the original template).
+* Fork the "API Horoscope" template at [https://github.com/spinecone/api-horoscope](https://github.com/spinecone/api-horoscope) (by forking this template, you'll be able to keep changes you make to separate from the original template). Make sure you're not forking https://github.com/spinecone/Your-First-API-Integration, which just contains the instructions you're reading now.
 * Now you've got your own copy of the horoscope template! To use it, visit https://github.com/your_username/api-horoscope
 * Next, copy the HTTPS clone url for the fork (it should resemble https://github.com/your_username]/api-horoscope.git)
 ![](/assets/Screen Shot 2017-04-04 at 12.07.29 AM.png)
