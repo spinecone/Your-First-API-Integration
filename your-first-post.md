@@ -17,7 +17,7 @@ access_token = request_token.get_access_token
 photos = access_token.post("/photos.xml", parameter_key: parameter_value)
 ```
 
-You can use all of that code as-is. You'll just need to replace "key", "secret", "[https://agree2](https://dev.twitter.com/rest/reference/post/statuses/update)", token, token\_secret_, _"/photos.xml", parameter\_key, and parameter\_value with the correct values for the horoscope app.
+You can use all of that code as-is. You'll just need to replace "key", "secret", "[https://agree2](https://dev.twitter.com/rest/reference/post/statuses/update)", "token", "token\_secret_", _"/photos.xml", "parameter\_key", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
 
 ## Using the Twitter API
 
