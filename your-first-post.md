@@ -15,14 +15,17 @@ If you visit[ the GitHub page for the oauth gem](https://github.com/oauth-xx/oau
 consumer = OAuth::Consumer.new(
   api_key,
   api_secret,
-  { site: some_site, scheme: 'header' }
+  { site: 'https://www.blablabla.gov', scheme: 'header' }
 )
-token_hash = { oauth_token: access_token, oauth_token_secret: access_token_secret }
+token_hash = {
+  oauth_token: access_token,
+  oauth_token_secret: access_token_secret
+}
 access_token = OAuth::AccessToken.from_hash(consumer, token_hash )
-access_token.request(:post, 'some full url', status: tweet_text)
+access_token.request(:post, 'https://www.blablabla.gov/api/do_something', parameter_name: parameter_value)
 ```
 
-You'll need to replace "key", "secret", "[https://agree2](https://dev.twitter.com/rest/reference/post/statuses/update)", "token", "token\_secret_", _"/photos.xml", "parameter\_key", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
+You'll need to replace `api_key`, `secret`, "https://www.blablabla.gov", "access\_token", "access\_token\_secret_", _"https://www.blablabla.gov/api/do_something", "parameter\_name", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
 
 ## Using the Twitter API
 
