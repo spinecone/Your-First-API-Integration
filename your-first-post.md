@@ -1,9 +1,10 @@
 # Your first POST
+
 ![](/assets/post.png)
 
 We can now move on to posting messages on Twitter from your app! This will require 2 changes, **a new method in horoscope.rb** and **a new button in index.erb.**
 
-For the new method in horoscope.rb, 
+For the new method in horoscope.rb,
 
 you'll need to use the oauth gem to generate a new access token using all 4 of the keys you put in your .env file. Then, you'll make a POST request to Twitter which includes the new access token and the message you want to send. You aren't actually going to need HTTParty at all for this part since you can make POST requests by using the oauth gem alone.
 
@@ -21,7 +22,7 @@ access_token = OAuth::AccessToken.from_hash(consumer, token_hash )
 access_token.request(:post, 'https://www.blablabla.gov/api/do_something', parameter_name: parameter_value)
 ```
 
-You'll need to replace `api_key`, `secret`, "https://www.blablabla.gov", "access\_token", "access\_token\_secret_", _"https://www.blablabla.gov/api/do_something", "parameter\_name", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
+You'll need to replace `api_key`, `secret`, "[https://www.blablabla.gov](https://www.blablabla.gov)", "access\_token", "access\_token\_secret_", _"[https://www.blablabla.gov/api/do\_something](https://www.blablabla.gov/api/do_something)", "parameter\_name", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
 
 ## Using the Twitter API
 
@@ -46,7 +47,9 @@ The last thing we'll need to do is add a button to index.erb that will post your
 
 This sets up a form that sends data from all of the inputs inside of it to the url at "some url" when the submit button is clicked. You'll need to change the action to the name of the POST method you added to horoscope.rb, and pass in @prediction as the value to your input. You can add `type="hidden"` to the input so that it doesn't show up as a form field on your page.
 
-🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨🤖✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 
+Now when you click on the submit button, your post method will be able to access the value for input some\_name through the params hash with `params[:some_name].`
+
+🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨🤖✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖
 
 That's it! You now have the power to use any API to make any weird thing you want. May all of your GET and POST dreams come true.
 
