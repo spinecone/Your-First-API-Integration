@@ -4,7 +4,9 @@
 
 We can now move on to posting messages on Twitter from your app! This will require 2 changes, **a new method in horoscope.rb** and **a new button in index.erb.**
 
-For the new method in horoscope.rb, you'll need to use the oauth gem to generate a new access token using all 4 of the keys you put in your .env file. Then, you'll make a POST request to Twitter which includes the new access token and the message you want to send. You aren't actually going to need HTTParty at all for this part since you can make POST requests by using the oauth gem alone.
+For the new method in horoscope.rb, you'll need to define a new POST url. It will use the same syntax as the existing `get '/'` url, but with 'post' instead of 'get' and with a different url.
+
+Next, you'll use the oauth gem to generate a new access token using all 4 of the keys you put in your .env file. Then, you'll make a POST request to Twitter which includes the new access token and the message you want to send. You aren't actually going to need HTTParty at all for this part since you can make POST requests by using the oauth gem alone.
 
 ## Using the oauth gem
 
