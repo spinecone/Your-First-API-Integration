@@ -3,18 +3,23 @@
 
 We can now move on to posting messages on Twitter from your app! This will require 2 changes, **a new method in horoscope.rb** and **a new button in index.erb.**
 
-For the new method in horoscope.rb, you'll need to use the oauth gem to generate a new access token using all 4 of the keys you put in your .env file. Then, you'll make a POST request to Twitter which includes the new access token and the message you want to send. You aren't actually going to need HTTParty at all for this part since you can make POST requests by using the oauth gem alone.
+For the new method in horoscope.rb, 
+
+you'll need to use the oauth gem to generate a new access token using all 4 of the keys you put in your .env file. Then, you'll make a POST request to Twitter which includes the new access token and the message you want to send. You aren't actually going to need HTTParty at all for this part since you can make POST requests by using the oauth gem alone.
 
 ## Using the oauth gem
 
 If you visit[ the GitHub page for the oauth gem](https://github.com/oauth-xx/oauth-ruby), you'll see an examples of how to use it in the "Demonstration of Usage" section. There's a lot of information here, but again, OAuth is a complicated thing that you don't need to worry about understanding fully! You can ignore the parts about sessions, setting a callback url, and redirecting since that assumes your app has users that can log in and out. Without those parts, we're left with:
 
 ```
-consumer = OAuth::Consumer.new("key","secret", site: "https://agree2")
-hash = { oauth_token: "token", oauth_token_secret: "token_secret" }
-request_token  = OAuth::RequestToken.from_hash(consumer, hash)
-access_token = request_token.get_access_token
-photos = access_token.request(:post, "/photos.xml", parameter_key: parameter_value)
+consumer = OAuth::Consumer.new(
+  api_key,
+  api_secret,
+  { site: some_site, scheme: 'header' }
+)
+token_hash = { oauth_token: access_token, oauth_token_secret: access_token_secret }
+access_token = OAuth::AccessToken.from_hash(consumer, token_hash )
+access_token.request(:post, 'some full url', status: tweet_text)
 ```
 
 You'll need to replace "key", "secret", "[https://agree2](https://dev.twitter.com/rest/reference/post/statuses/update)", "token", "token\_secret_", _"/photos.xml", "parameter\_key", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
