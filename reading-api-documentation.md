@@ -10,9 +10,9 @@ This means that all requests using the Wikipedia API will look like `https://en.
 
 Next, we're going to look at the page that describes how to request random articles. I found [https://www.mediawiki.org/wiki/API:Random](https://www.mediawiki.org/wiki/API:Random) by googling "wikipedia api random," but you could also use the MediaWiki API search box.
 
-This page tells us everything we need to know to request random articles from the API. There are several optional parameters which we won't be using in this tutorial that affect the quantity and kinds of articles you get back from this request \(we want to search across all articles and only get 1 back, which is the default behavior\).
+This page tells us everything we need to know to request random articles from the API. There are 4 optional parameters, rnlimit, rnnamespace, rnredirect, and rnfilterredir. We'll only be using **rnnamespace** in this tutorial. We will set it to 0, so we only get articles, as opposed to pages like user profiles and discussions about articles.
 
-Looking at the example provided, we can see that the base url is unchanged. The only necessary addition is adding the parameters `action=query` and `list=random`.
+Looking at the example provided, we can see that the base url is unchanged. The only necessary addition is adding the parameters `action=query`, `list=random`, and `rnnamespace=0`.
 ![](/assets/Screen Shot 2017-04-04 at 1.00.25 AM.png)
 
 
