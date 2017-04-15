@@ -10,7 +10,7 @@ Next, you'll use the oauth gem to generate a new access token using all 4 of the
 
 ## Using the oauth gem
 
-If you visit[ the GitHub page for the oauth gem](https://github.com/oauth-xx/oauth-ruby), you'll see an examples of how to use it in the "Demonstration of Usage" section. There's a lot of information here, but again, OAuth is a complicated thing that you don't need to worry about understanding fully! You can ignore the parts about sessions, setting a callback url, and redirecting since that assumes your app has users that can log in and out. Without those parts, we're left with:
+[ The GitHub page for the oauth gem](https://github.com/oauth-xx/oauth-ruby) has examples and background information about using OAuth. It isn't important right now but you can read it if you're interested in learning more. For our purposes, you just need to copy the template below:
 
 ```
 consumer = OAuth::Consumer.new(
@@ -30,9 +30,9 @@ To find the correct urls to pass in to OAuth, we'll need to consult [the Twitter
 
 ![](/assets/Screen Shot 2017-04-04 at 11.53.37 PM.png)
 
-There are 2 pieces of information we need from this page: the **resource url **and the **required parameters. **We will take the part of the resource url up to ".com" \(this is called the "hostname" of the url\) and use that as the "site" parameter of OAuth::Consumer.new. We'll take the rest of the resource url \(this is called the "path"\)  and use that to call `access_token.post` instead of "/photos.xml."
+There are 2 pieces of information we need from this page: the **resource url **and the **required parameters. **We will take the part of the resource url up to ".com" \(this is called the "hostname" of the url\) and use that as the "site" parameter of OAuth::Consumer.new. We'll take the rest of the resource url \(this is called the "path"\)  and use that to call `access_token.request` instead of "https://www.blablabla.gov/api/do_something."
 
-We'll also need to pass required parameters to `access_token.post`. The API documentation shows that there's just one required parameter, the message itself. Use the name of that parameter as the key, and the message as the value. Now you're ready to POST!
+We'll also need to pass required parameters to `access_token.request`. The API documentation shows that there's just one required parameter, the message itself. Use the name of that parameter as the key, and the message as the value. Now you're ready to POST!
 
 # Adding a button
 
