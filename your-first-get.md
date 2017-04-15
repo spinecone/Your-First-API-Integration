@@ -9,8 +9,10 @@ You can check out the full documentation for HTTParty at [https://github.com/jnu
 
 Once you get a response from Wikipedia, you'll see that the response includes text that says:
 ```
-This is the HTML representation of the JSON format. HTML is good for debugging, but is unsuitable for application use.
-Specify the format parameter to change the output format. To see the non-HTML representation of the JSON format, set format=json.
+This is the HTML representation of the JSON format.
+HTML is good for debugging, but is unsuitable for application use.
+Specify the format parameter to change the output format.
+To see the non-HTML representation of the JSON format, set format=json.
 ```
 This means we'll need one more parameter in our url, the format.
 
