@@ -16,6 +16,6 @@ To see the non-HTML representation of the JSON format, set format=json.
 ```
 This means we'll need one more parameter in our url, the format. **JSON** is a format that the vast majority of modern APIs use. You can read allllll about JSON at [http://www.json.org/](http://www.json.org/). It doesn't matter to us right now since HTTParty will JSON into a hash for us, but keep in mind that JSON is what's being returned by Wikipedia behind the scenes.
 
-Finally, you'll need to get the title out of the response hash it returns. The full response contains stuff we don't need like the id of the page.
+Finally, you'll need to get the title out of the response hash it returns. The full response contains stuff we don't need like the id of the page. If you're not very familiar with Ruby hash syntax, you can take a look at this tutorial on Hashes: https://www.tutorialspoint.com/ruby/ruby_hashes.htm
 
 Use your new API documentation reading and HTTP requesting skills to change horoscope.rb so that instead of generating a prediction from a list of emoji, it uses a random Wikipedia article title. You shouldn't need to make any changes to index.erb for this, just horoscope.rb.
