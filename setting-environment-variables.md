@@ -6,7 +6,7 @@ Instead, we're going to store these keys in a file named **.env**. In the introd
 
  ![](/assets/Screen Shot 2017-04-04 at 9.53.19 PM.png)
 
-Since the **dotenv **gem is loaded in horoscope.rb, you'll be able to access these tokens from there.
+Since the **dotenv **gem is loaded in horoscope.rb, you'll be able to access these tokens from there by using the ENV hash. For example, to use the `API_KEY` token, you'll use `ENV['API_KEY']`.
 
 Add your authentication secrets to a new .env file, and test that you can access them from horoscope.rb.
 
