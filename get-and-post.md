@@ -12,7 +12,7 @@ Although the url and parameters are visible in this example, the method is a lit
 
 GET and POST are types of HTTP methods. There are several different types of HTTP requests that have different purposes.
 
-* **GET **requests bring data from a website to the person or robot who requested it. For example, if you go to the url [https://en.wikipedia.org/wiki/Pancake](https://en.wikipedia.org/wiki/Pancake), you're just going to get information about pancakes. You're not giving Wikipedia any new information about pancakes. Parameters for GET requests are visible in the url, like we saw earlier with q=pancakes.
+* **GET **requests bring data from a website to the person or robot who requested it. For example, if you go to the url [https://twitter.com/search?q=pancakes](https://twitter.com/search?q=pancakes), you're just going to get tweets about pancakes. You're not giving tweeting anything new about pancakes. Parameters for GET requests are visible in the url.
 * **POST **requests push data from a person or robot to a website. If you go to Twitter to tweet about how much you love pancakes, you're making a POST request. Unlike a GET request, you won't be able to see POST parameters from the url bar of your browser. 
 * There are a few other HTTP request methods such as DELETE and PATCH, but we won't be covering them in this tutorial.
 
