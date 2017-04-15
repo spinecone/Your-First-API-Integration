@@ -4,9 +4,7 @@
 
 We can now move on to posting messages on Twitter from your app! This will require 2 changes, **a new method in horoscope.rb** and **a new button in index.erb.**
 
-For the new method in horoscope.rb,
-
-you'll need to use the oauth gem to generate a new access token using all 4 of the keys you put in your .env file. Then, you'll make a POST request to Twitter which includes the new access token and the message you want to send. You aren't actually going to need HTTParty at all for this part since you can make POST requests by using the oauth gem alone.
+For the new method in horoscope.rb, you'll need to use the oauth gem to generate a new access token using all 4 of the keys you put in your .env file. Then, you'll make a POST request to Twitter which includes the new access token and the message you want to send. You aren't actually going to need HTTParty at all for this part since you can make POST requests by using the oauth gem alone.
 
 ## Using the oauth gem
 
@@ -52,4 +50,8 @@ Now when you click on the submit button, your post method will be able to access
 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨🤖✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖 ✨ 🤖
 
 That's it! You now have the power to use any API to make any weird thing you want. May all of your GET and POST dreams come true.
+
+Some extra challenges you might want to try:
+- Include the link to the Wikipedia article your horoscope comes from in your tweet
+- Let people log in to Twitter so horoscope tweets are sent to their personal account
 
