@@ -5,6 +5,8 @@ Now that we know how to request a random article from Wikipedia, we can add that
 
 You can check out the full documentation for HTTParty at [https://github.com/jnunemaker/httparty](https://github.com/jnunemaker/httparty), but for now all you need to know is that to make a GET request, you use `HTTParty.get(url)`. Remember that the url for this request is just the Wikipedia API base url, with the "action", "list", and "rnnamespace" parameters at the end.
 
+**Note: if you're using a Windows computer,  you'll need to add the parameter `verify: false` to all of your HTTParty requests, so your request will look like `HTTParty.get(url, verify:false)`**
+
 Once you get a response from Wikipedia, you'll see that the response includes text that says:
 ```
 This is the HTML representation of the JSON format. HTML is good for debugging, but is unsuitable for application use.
