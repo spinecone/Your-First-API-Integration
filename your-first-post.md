@@ -14,7 +14,7 @@ consumer = OAuth::Consumer.new("key","secret", site: "https://agree2")
 hash = { oauth_token: "token", oauth_token_secret: "token_secret" }
 request_token  = OAuth::RequestToken.from_hash(consumer, hash)
 access_token = request_token.get_access_token
-photos = access_token.post("/photos.xml", parameter_key: parameter_value)
+photos = access_token.request(:post, "/photos.xml", parameter_key: parameter_value)
 ```
 
 You'll need to replace "key", "secret", "[https://agree2](https://dev.twitter.com/rest/reference/post/statuses/update)", "token", "token\_secret_", _"/photos.xml", "parameter\_key", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
