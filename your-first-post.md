@@ -22,7 +22,7 @@ access_token = OAuth::AccessToken.from_hash(consumer, token_hash )
 access_token.request(:post, 'https://www.blah.gov/api/do_something', parameter_name: parameter_value)
 ```
 
-You'll need to replace `api_key`, `secret`, "https://www.blah.gov", "access\_token", "access\_token\_secret_", _"https://www.blah.gov/api/do\_something", "parameter\_name", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
+You'll need to replace `api_key`, `secret`, "https://www.blah.gov", "access\_token", "access\_token\_secret_", _"https://www.blah.gov/api/do_something", "parameter\_name", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
 
 ## Using the Twitter API
 
