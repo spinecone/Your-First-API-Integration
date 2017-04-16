@@ -15,14 +15,14 @@ Next, you'll use the oauth gem to generate a new access token using all 4 of the
 ```
 consumer = OAuth::Consumer.new(
   api_key, api_secret,
-  { site: 'https://www.blablabla.gov', scheme: 'header' }
+  { site: 'https://www.blah.gov', scheme: 'header' }
 )
 token_hash = { oauth_token: access_token, oauth_token_secret: access_token_secret }
 access_token = OAuth::AccessToken.from_hash(consumer, token_hash )
-access_token.request(:post, 'https://www.blablabla.gov/api/do_something', parameter_name: parameter_value)
+access_token.request(:post, 'https://www.blah.gov/api/do_something', parameter_name: parameter_value)
 ```
 
-You'll need to replace `api_key`, `secret`, "[https://www.blablabla.gov](https://www.blablabla.gov)", "access\_token", "access\_token\_secret_", _"[https://www.blablabla.gov/api/do\_something](https://www.blablabla.gov/api/do_something)", "parameter\_name", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
+You'll need to replace `api_key`, `secret`, "https://www.blah.gov", "access\_token", "access\_token\_secret_", _"https://www.blah.gov/api/do\_something", "parameter\_name", and "parameter\_value" with the correct values for the horoscope app. We'll learn how to get those values in the next section.
 
 ## Using the Twitter API
 
