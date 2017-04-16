@@ -17,7 +17,7 @@ Try out a few changes to horoscope.rb or index.erb to see how Sinatra works. To 
 * In the terminal, enter `gem install bundler`. This installs a tool that makes it easier to install the Ruby libraries we'll need for this tutorial.
 * Enter`bundle exec ruby ./horoscope.rb` into the terminal. This runs a local Sinatra server. Depending on the changes you've made, it might give you an error and some clues about how to fix it.
 * Enter `bundle install` to install the gems we'll be using today
-* Finally, visit localhost:4567 in a browser to see your website!
+* Finally, visit localhost:4567 in a browser to see your website! (`localhost:4567` is the default url for local Sinatra servers, referring to port 4567. When you run the server, you'll see the message "Sinatra has taken the stage on 4567" indicating that this is the port it uses.)
 * When you make more changes, restart your server by using `Ctrl+C` and then entering `bundle exec ruby ./horoscope.rb` again. This will reload all of the files in your application.
 
 
