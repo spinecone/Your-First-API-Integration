@@ -10,7 +10,7 @@ Here's a screenshot of [https://www.mediawiki.org/wiki/API:Main\_page](https://w
 
 Next, we're going to look at the page that describes how to request random articles. I found [https://www.mediawiki.org/wiki/API:Random](https://www.mediawiki.org/wiki/API:Random) by googling "wikipedia api random," but you could also use the MediaWiki API search box.
 
-This page tells us everything we need to know to request random articles from the API. There are 4 optional parameters, rnlimit, rnnamespace, rnredirect, and rnfilterredir. We'll only be using **rnnamespace** in this tutorial. We will set it to 0, so we only get articles, as opposed to pages like user profiles and discussions about articles.
+Since an API request is made out of a url and parameters, this page tells us everything we need to know to request random articles from the API. There are 4 optional parameters, rnlimit, rnnamespace, rnredirect, and rnfilterredir. We'll only be using **rnnamespace** in this tutorial. We will set it to 0, so we only get articles, as opposed to pages like user profiles and discussions about articles.
 
 Looking at the example provided, we can see that the base url is unchanged. The only necessary addition is adding the parameters `action=query`, `list=random`, and `rnnamespace=0`.
 ![](/assets/Screen Shot 2017-04-04 at 1.00.25 AM.png)
