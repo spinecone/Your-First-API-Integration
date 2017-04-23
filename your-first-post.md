@@ -10,7 +10,7 @@ Next, you'll use the oauth gem to generate a new access token using all 4 of the
 
 ## Using the oauth gem
 
-[ The GitHub page for the oauth gem](https://github.com/oauth-xx/oauth-ruby) has examples and background information about using OAuth. It isn't important right now but you can read it if you're interested in learning more. For our purposes, you just need to copy the template below:
+[ The GitHub page for the oauth gem](https://github.com/oauth-xx/oauth-ruby) has examples and background information about using OAuth. It isn't important right now but you can read it if you're interested in learning more. For our purposes, you just need to copy the template below into horoscope.rb:
 
 ```
 consumer = OAuth::Consumer.new(
