@@ -6,7 +6,7 @@ Here's a screenshot of [https://www.mediawiki.org/wiki/API:Main\_page](https://w
 
 ![](/assets/Screen Shot 2017-04-04 at 12.55.59 AM.png)
 
-This means that all requests using the Wikipedia API will look like `https://en.wikipedia.org/w/api.php[whatever else is going on in our request].` Keep that in mind since all the other pages in this documentation won't refer to the base URL, and will just tell you what to add to it.
+"Endpoint" is a term you'll see in most API documentation which just means the url you'll be using to do the thing being described. This means that all requests using the Wikipedia API will look like `https://en.wikipedia.org/w/api.php[whatever else is going on in our request].` Keep that in mind since all the other pages in this documentation won't refer to the base URL, and will just tell you what to add to it.
 
 Next, we're going to look at the page that describes how to request random articles. I found [https://www.mediawiki.org/wiki/API:Random](https://www.mediawiki.org/wiki/API:Random) by googling "wikipedia api random," but you could also use the MediaWiki API search box.
 
