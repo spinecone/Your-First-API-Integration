@@ -15,4 +15,5 @@
 * [Setting environment variables](setting-environment-variables.md)
 * [Your first POST](your-first-post.md)
 * [That's it?!](thats-it.md)
+* [Acknowledgements](acknowledgements.md)
 
